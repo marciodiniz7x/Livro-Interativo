@@ -5,10 +5,14 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #202123;
+}
+
 .livro {
     font-family: Arial, Helvetica, sans-serif;
 
-    border: 2px solid rgb(208, 191, 223);
+    border: 1px solid rgb(208, 191, 223);
     width: 550px;
     height: 875px;
     margin-top: 20px;
