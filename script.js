@@ -7,4 +7,3 @@ function criarBlur() {
     }, 300);
 }
 
-capaIniciar.addEventListener('click', criarBlur());
