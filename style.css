@@ -11,7 +11,7 @@ body {
 }
 
 .livro {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     border: 1px solid rgb(208, 191, 223);
     width: 550px;
