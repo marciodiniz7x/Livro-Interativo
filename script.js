@@ -4,7 +4,8 @@ function criarBlur() {
     capaIniciar.classList.add('anima-blur');
     setTimeout(() => {
         capaIniciar.classList.remove('anima-blur');
-    }, 350);
+    }, 300);
 }
 
-capaIniciar.addEventListener('mouseover', criarBlur());
+capaIniciar.addEventListener('mouseover', criarBlur);
+capaIniciar.addEventListener('mouseout', criarBlur);
