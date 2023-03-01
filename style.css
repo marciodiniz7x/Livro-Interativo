@@ -7,7 +7,14 @@
 
 .livro {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 
+    border: 2px solid rgb(208, 191, 223);
+    width: 50vw;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
     
 }
 
