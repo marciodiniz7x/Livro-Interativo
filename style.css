@@ -55,11 +55,12 @@ body {
 
 
 /* PÁGINA 01 */
-.pag01 {
+.pages {
+    padding: 20px;
     width: 550;
     height: 878px;
     background-color: #343541;
-    text
+    
 }
 
 /* CLASSES PRÉ-DEFINIDAS */
