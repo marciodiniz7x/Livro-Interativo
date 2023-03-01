@@ -41,7 +41,8 @@
     color: white;
 
     cursor: pointer;
-    transition: 300ms;
+    
+    animation: anima-blur 300ms;
 
 }
 .capa-iniciar:hover {
@@ -62,7 +63,7 @@
         filter: blur(0px);
     }
     50% {
-        filter: blur(20px);
+        filter: blur(30px);
     }
     100% {
         filter: blur(0px);
