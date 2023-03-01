@@ -7,14 +7,24 @@
 
 .livro {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 
     border: 2px solid rgb(208, 191, 223);
-    width: 50vw;
-    height: 400px;
+    width: 550px;
+    height: 875px;
     margin-top: 20px;
     margin-left: 50%;
     transform: translateX(-50%);
-    
+    overflow: hidden;
 }
 
+.capa {
+    width: 550;
+    height: 878px;
+    background-image: url(./img/capa.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.sumir {
+    display: none;
+}
