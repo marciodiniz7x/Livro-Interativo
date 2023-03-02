@@ -1,7 +1,7 @@
 const capa = document.querySelector('.capa');
 const pag01 = document.querySelector('.pag01');
 const capaIniciar = document.querySelector('.capa-iniciar');
-const paragrafos = document.querySelectorAll('p')
+const paragrafos = document.querySelectorAll('p');
 
 const pag01avance01 = document.querySelector('.pag01-avance01');
 const pag01return01 = document.querySelector('.pag01-return01');
