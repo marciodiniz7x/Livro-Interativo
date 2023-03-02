@@ -1,8 +1,11 @@
 const capa = document.querySelector('.capa');
 const pag01 = document.querySelector('.pag01');
 const capaIniciar = document.querySelector('.capa-iniciar');
+
 const pag01avance01 = document.querySelector('.pag01-avance01');
 const pag01return01 = document.querySelector('.pag01-return01');
+
+const resultadoAvance = document.querySelector('.resultado-avance');
 
 // Uma variável para se transformar no botão apropriado
 let botaoMomento = capaIniciar;
@@ -20,5 +23,11 @@ pag01return01.addEventListener('click', () => {
 
     pag01.classList.add('sumir');
     capa.classList.remove('sumir');
+   
+});
+
+pag01avance01.addEventListener('click', () => {
+
+    resultadoAvance.classList.remove('sumir');
    
 });

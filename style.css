@@ -14,7 +14,7 @@ p {
     text-indent: 2em;
 }
 
-#box-botoes {
+.box-botoes {
     display: flex;
     justify-content: center;
     gap: 7px;
