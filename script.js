@@ -11,6 +11,7 @@ const escolha03 = document.querySelector('.escolha03');
 
 const resultadoAvance = document.querySelector('.resultado-avance');
 const resultadoDeitar = document.querySelector('.resultado-deitar');
+const resultadoLevantar = document.querySelector('resultado-levantar');
 
 // Uma variável para se transformar no botão apropriado
 let botaoMomento = capaIniciar;
