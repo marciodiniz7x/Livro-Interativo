@@ -6,6 +6,7 @@ const capaIniciar = document.querySelector('.capa-iniciar');
 const pag01avance01 = document.querySelector('.pag01-avance01');
 const pag01return01 = document.querySelector('.pag01-return01');
 const escolha02 = document.querySelector('.escolha02');
+const pag01Deitar = document.querySelector('.pag01-deitar');
 
 const resultadoAvance = document.querySelector('.resultado-avance');
 
@@ -18,8 +19,7 @@ pag01return01.addEventListener('click', () => {
     location.reload();
     pag01.classList.add('sumir');
     capa.classList.remove('sumir');
-    
-   
+     
 });
 
 
