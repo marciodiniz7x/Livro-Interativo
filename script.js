@@ -7,6 +7,7 @@ const pag01avance01 = document.querySelector('.pag01-avance01');
 const pag01return01 = document.querySelector('.pag01-return01');
 const escolha02 = document.querySelector('.escolha02');
 const pag01Deitar = document.querySelector('.pag01-deitar');
+const escolha03 = document.querySelector('.escolha03');
 
 const resultadoAvance = document.querySelector('.resultado-avance');
 const resultadoDeitar = document.querySelector('.resultado-deitar');
@@ -43,3 +44,14 @@ pag01avance01.addEventListener('click', () => {
     }, 1000);
    
 });
+
+pag01Deitar.addEventListener('click', () => {
+
+    resultadoDeitar.classList.add('anima-blur');
+    resultadoDeitar.classList.remove('sumir');
+    setTimeout(() => {
+        escolha03.classList.add('anima-blur');
+        escolha03.classList.remove('sumir');
+    }, 1000);
+
+})
