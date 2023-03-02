@@ -1,13 +1,15 @@
 const capa = document.querySelector('.capa');
 const pag01 = document.querySelector('.pag01');
 const capaIniciar = document.querySelector('.capa-iniciar');
-
+const escolha02 = document.querySelector('.escolha02');
+const escolha03 = document.querySelector('.escolha03');
+const escolha04 = document.querySelector('.escolha04')
 
 const pag01avance01 = document.querySelector('.pag01-avance01');
 const pag01return01 = document.querySelector('.pag01-return01');
-const escolha02 = document.querySelector('.escolha02');
 const pag01Deitar = document.querySelector('.pag01-deitar');
-const escolha03 = document.querySelector('.escolha03');
+const pag01Levantar = document.querySelector('.pag01-levantar');
+
 
 const resultadoAvance = document.querySelector('.resultado-avance');
 const resultadoDeitar = document.querySelector('.resultado-deitar');
@@ -54,4 +56,15 @@ pag01Deitar.addEventListener('click', () => {
         escolha03.classList.remove('sumir');
     }, 1000);
 
-})
+});
+
+pag01Levantar.addEventListener('click', () => {
+
+    resultadoLevantar.classList.add('anima-blur');
+    resultadoLevantar.classList.remove('sumir');
+    setTimeout(() => {
+        escolha04.classList.add('anima-blur');
+        escolha04.classList.remove('sumir');
+    }, 1000);
+
+});
