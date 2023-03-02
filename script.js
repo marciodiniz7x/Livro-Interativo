@@ -24,7 +24,6 @@ pag01return01.addEventListener('click', () => {
      
 });
 
-
 // Um evento na capa do livro que irá iniciar a leitura
 capaIniciar.addEventListener('click', () => {
 
