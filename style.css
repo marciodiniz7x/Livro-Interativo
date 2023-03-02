@@ -10,16 +10,27 @@ body {
     color: rgb(221, 222, 245);
 }
 
+p {
+    text-indent: 2em;
+}
+
+#box-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
 .livro {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    border: 1px solid rgb(208, 191, 223);
+    border: 1px solid rgb(95, 77, 110);
     width: 550px;
     height: 875px;
     margin-top: 20px;
     margin-left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
+    box-shadow: 2px 1px 10px 2px rgb(175, 57, 165);
 }
 
 .capa {
@@ -39,23 +50,23 @@ body {
     height: 50px;
 
     border-radius: 30px;
-    background-color: rgb(153, 44, 126);
+    background-color: rgb(226, 43, 171);
 
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 
     cursor: pointer;
-
+    transition: 600ms;
 }
 .capa-iniciar:hover {
-    transition-delay: 150ms;
-    background-color: rgb(90, 90, 138);
+    animation: anima-blur 400ms linear;
+    background-color: rgb(248, 121, 210);
 }
 
 
 /* PÁGINA 01 */
-.pages {
+.pag01 {
     padding: 20px;
     width: 550;
     height: 878px;
@@ -63,9 +74,79 @@ body {
     
 }
 
+/* Escolha 01 */
+.pag01-avance01 {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(2, 179, 76);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 600ms;
+    color: white;
+
+}
+.pag01-avance01:hover {
+    animation: anima-blur 400ms linear;
+    background-color: rgb(84, 209, 136);
+    transition: 300ms;
+}
+
+.pag01-return01 {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(226, 43, 171);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 600ms;
+    color: white;
+}
+.pag01-return01:hover {
+    animation: anima-blur 400ms linear;
+    background-color: rgb(248, 121, 210);
+    transition: 300ms;
+    color: white;
+}
+
+/* Escolha 02 */
+.pag01-avance01 {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(2, 179, 76);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 600ms;
+    color: white;
+
+}
+.pag01-avance01:hover {
+    animation: anima-blur 400ms linear;
+    background-color: rgb(84, 209, 136);
+    transition: 300ms;
+}
+
+.pag01-return01 {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(226, 43, 171);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 600ms;
+    color: white;
+}
+.pag01-return01:hover {
+    animation: anima-blur 400ms linear;
+    background-color: rgb(248, 121, 210);
+    transition: 300ms;
+    color: white;
+}
+
 /* CLASSES PRÉ-DEFINIDAS */
 .anima-blur {
-    animation: anima-blur 300ms linear;
+    animation: anima-blur 400ms linear;
+}
+
+.anima-blur-out {
+    animation: anima-blur-out 400ms linear;
 }
 
 .sumir {
@@ -79,6 +160,16 @@ body {
         filter: blur(0px);
     }
     50% {
+        filter: blur(10px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+@keyframes anima-blur {
+
+    0% {
         filter: blur(10px);
     }
     100% {
