@@ -1,10 +1,11 @@
 const capa = document.querySelector('.capa');
 const pag01 = document.querySelector('.pag01');
 const capaIniciar = document.querySelector('.capa-iniciar');
-const paragrafos = document.querySelectorAll('p');
+
 
 const pag01avance01 = document.querySelector('.pag01-avance01');
 const pag01return01 = document.querySelector('.pag01-return01');
+const escolha02 = document.querySelector('.escolha02');
 
 const resultadoAvance = document.querySelector('.resultado-avance');
 
@@ -14,11 +15,10 @@ let botaoMomento = capaIniciar;
 // Evento que retorna à capa do livro
 pag01return01.addEventListener('click', () => {
 
+    location.reload();
     pag01.classList.add('sumir');
     capa.classList.remove('sumir');
-    paragrafos.forEach((paragrafo => {
-       paragrafo.classList.add('sumir') 
-    }));
+    
    
 });
 
@@ -28,11 +28,17 @@ capaIniciar.addEventListener('click', () => {
 
     capa.classList.add('sumir');
     pag01.classList.remove('sumir');
+    pag01.classList.add('anima-blur');
     
 });
 
 pag01avance01.addEventListener('click', () => {
 
+    resultadoAvance.classList.add('anima-blur');
     resultadoAvance.classList.remove('sumir');
+    setTimeout(() => {
+        escolha02.classList.add('anima-blur');
+        escolha02.classList.remove('sumir');
+    }, 1000);
    
 });

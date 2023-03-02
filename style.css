@@ -188,7 +188,7 @@ p {
 
 
 /* ANIMAÇÕES */
-@keyframes anima-blur {
+@keyframes anima-blur-in {
     0% {
         filter: blur(0px);
     }
