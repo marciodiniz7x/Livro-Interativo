@@ -108,7 +108,7 @@ p {
 }
 
 /* Escolha 02 */
-.pag01-avance01 {
+.pag01-deitar {
     padding: 15px;
     border-radius: 20px;
     background-color: rgb(2, 179, 76);
@@ -118,13 +118,13 @@ p {
     color: white;
 
 }
-.pag01-avance01:hover {
+.pag01-deitar:hover {
     animation: anima-blur 400ms linear;
     background-color: rgb(84, 209, 136);
     transition: 300ms;
 }
 
-.pag01-return01 {
+.pag01-levantar {
     padding: 15px;
     border-radius: 20px;
     background-color: rgb(226, 43, 171);
@@ -133,7 +133,7 @@ p {
     transition: 600ms;
     color: white;
 }
-.pag01-return01:hover {
+.pag01-levantar:hover {
     animation: anima-blur 400ms linear;
     background-color: rgb(248, 121, 210);
     transition: 300ms;
