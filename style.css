@@ -69,6 +69,7 @@ p {
 }
 
 .box-botoes {
+    
     display: flex;
     justify-content: center;
     gap: 7px;
@@ -180,6 +181,12 @@ p {
 
 .sumir {
     display: none;
+}
+
+.centralizar {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: 400ms ease-out;
 }
 
 
