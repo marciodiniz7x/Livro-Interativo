@@ -183,6 +183,11 @@ p {
     display: none;
 }
 
+.apagar {
+    animation: apagar 300ms;
+    
+}
+
 .centralizar {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -210,5 +215,17 @@ p {
     }
     100% {
         filter: blur(0px);
+    }
+}
+
+@keyframes apagar {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
     }
 }

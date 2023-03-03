@@ -41,7 +41,8 @@ pag01avance01.addEventListener('click', () => {
 
     resultadoAvance.classList.add('anima-blur');
     resultadoAvance.classList.remove('sumir');
-    pag01return01.classList.add('anima-blur');
+    pag01return01.classList.add('anima-blur', 'apagar');
+    
     
     setTimeout(() => {
         pag01return01.classList.add('sumir');
