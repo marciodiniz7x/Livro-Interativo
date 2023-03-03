@@ -13,19 +13,10 @@ const pag01Levantar = document.querySelector('.pag01-levantar');
 
 const resultadoAvance = document.querySelector('.resultado-avance');
 const resultadoDeitar = document.querySelector('.resultado-deitar');
-const resultadoLevantar = document.querySelector('resultado-levantar');
+const resultadoLevantar = document.querySelector('.resultado-levantar');
 
 // Uma variável para se transformar no botão apropriado
 let botaoMomento = capaIniciar;
-
-// Evento que retorna à capa do livro
-pag01return01.addEventListener('click', () => {
-
-    location.reload();
-    pag01.classList.add('sumir');
-    capa.classList.remove('sumir');
-     
-});
 
 // Um evento na capa do livro que irá iniciar a leitura
 capaIniciar.addEventListener('click', () => {
@@ -36,10 +27,21 @@ capaIniciar.addEventListener('click', () => {
     
 });
 
+// Evento que retorna à capa do livro
+pag01return01.addEventListener('click', () => {
+
+    location.reload();
+    pag01.classList.add('sumir');
+    capa.classList.remove('sumir');
+     
+});
+
+// Avança para o segunndo parágrafo
 pag01avance01.addEventListener('click', () => {
 
     resultadoAvance.classList.add('anima-blur');
     resultadoAvance.classList.remove('sumir');
+    pag01return01.classList.add('sumir');
     setTimeout(() => {
         escolha02.classList.add('anima-blur');
         escolha02.classList.remove('sumir');
@@ -47,10 +49,15 @@ pag01avance01.addEventListener('click', () => {
    
 });
 
+// Executa o resultado ao escolher ficar na cama
 pag01Deitar.addEventListener('click', () => {
 
     resultadoDeitar.classList.add('anima-blur');
     resultadoDeitar.classList.remove('sumir');
+    pag01Levantar.classList.add('anima-blur');
+    setTimeout(() => {
+        pag01Levantar.classList.add('sumir');
+    }, 300);
     setTimeout(() => {
         escolha03.classList.add('anima-blur');
         escolha03.classList.remove('sumir');

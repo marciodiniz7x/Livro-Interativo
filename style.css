@@ -14,12 +14,6 @@ p {
     text-indent: 2em;
 }
 
-.box-botoes {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-}
-
 .livro {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -74,6 +68,13 @@ p {
     
 }
 
+.box-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    transition: 400ms;
+}
+
 /* Escolha 01 */
 .pag01-avance01 {
     padding: 15px;
@@ -81,14 +82,12 @@ p {
     background-color: rgb(2, 179, 76);
     font-weight: bold;
     cursor: pointer;
-    transition: 600ms;
     color: white;
 
 }
 .pag01-avance01:hover {
     animation: anima-blur 400ms linear;
     background-color: rgb(84, 209, 136);
-    transition: 300ms;
 }
 
 .pag01-return01 {
@@ -97,13 +96,11 @@ p {
     background-color: rgb(226, 43, 171);
     font-weight: bold;
     cursor: pointer;
-    transition: 600ms;
     color: white;
 }
 .pag01-return01:hover {
     animation: anima-blur 400ms linear;
     background-color: rgb(248, 121, 210);
-    transition: 300ms;
     color: white;
 }
 
@@ -140,21 +137,20 @@ p {
     color: white;
 }
 
-/* Escolha 02 */
+/* Escolha 03 */
 .pag01-questionar {
     padding: 15px;
     border-radius: 20px;
     background-color: rgb(2, 179, 76);
     font-weight: bold;
     cursor: pointer;
-    transition: 600ms;
+    transition: 400ms;
     color: white;
 
 }
 .pag01-questionar:hover {
     animation: anima-blur 400ms linear;
     background-color: rgb(84, 209, 136);
-    transition: 300ms;
 }
 
 .pag01-agradecer {
@@ -163,7 +159,7 @@ p {
     background-color: rgb(226, 43, 171);
     font-weight: bold;
     cursor: pointer;
-    transition: 600ms;
+    transition: 400ms;
     color: white;
 }
 .pag01-agradecer:hover {
