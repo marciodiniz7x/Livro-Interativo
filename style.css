@@ -70,7 +70,6 @@ p {
 
 .box-botoes {
     
-    display: flex;
     justify-content: center;
     gap: 7px;
     transition: 400ms;
@@ -84,7 +83,7 @@ p {
     font-weight: bold;
     cursor: pointer;
     color: white;
-
+    transition: 400ms ease-out;
 }
 .pag01-avance01:hover {
     animation: anima-blur 400ms linear;
@@ -188,9 +187,8 @@ p {
     
 }
 
-.centralizar {
-    margin-left: 50%;
-    transform: translateX(-50%);
+.posicionar {
+    
     transition: 400ms ease-out;
 }
 
