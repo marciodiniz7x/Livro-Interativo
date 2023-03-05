@@ -74,6 +74,10 @@ pag01Levantar.addEventListener('click', () => {
 
     resultadoLevantar.classList.add('anima-blur');
     resultadoLevantar.classList.remove('sumir');
+    pag01Deitar.classList.add('anima-blur');
+    setTimeout(() => {
+        pag01Deitar.classList.add('sumir');
+    }, 300);
     setTimeout(() => {
         escolha04.classList.add('anima-blur');
         escolha04.classList.remove('sumir');
