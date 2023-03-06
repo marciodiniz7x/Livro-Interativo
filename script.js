@@ -87,13 +87,20 @@ pag01Levantar.addEventListener('click', () => {
 
 });
 
-// função para tocar efeito sonoro nos botões
-
+// função para tocar efeito sonoro nos botoes
 let audio = new Audio('./sound/ori01.mp3');
-function efeitoOri() {
-    audio.play()
+
+function tocarOri() {
+    audio.pause()
+        audio.currentTime = 0;
+        setTimeout(() => {
+            audio.play();
+        }, 100);
 }
 
 botoes.forEach(botao => {
-    botao.addEventListener('click', efeitoOri);
+
+    botao.addEventListener('click', tocarOri);
+    botao.addEventListener('mouseover', tocarOri);
+
 });
