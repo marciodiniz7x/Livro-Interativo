@@ -136,6 +136,21 @@ p {
     transition: 300ms;
     color: white;
 }
+.pag01-levantar02 {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(226, 43, 171);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 600ms;
+    color: white;
+}
+.pag01-levantar02:hover {
+    animation: anima-blur 400ms linear;
+    background-color: rgb(248, 121, 210);
+    transition: 300ms;
+    color: white;
+}
 
 /* Escolha 03 */
 .pag01-questionar {

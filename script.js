@@ -9,6 +9,7 @@ const pag01avance01 = document.querySelector('.pag01-avance01');
 const pag01return01 = document.querySelector('.pag01-return01');
 const pag01Deitar = document.querySelector('.pag01-deitar');
 const pag01Levantar = document.querySelector('.pag01-levantar');
+const pag01Levantar02 = document.querySelector('.pag01-levantar02');
 
 const botoes = document.querySelectorAll('button');
 
@@ -80,6 +81,18 @@ pag01Levantar.addEventListener('click', () => {
     setTimeout(() => {
         pag01Deitar.classList.add('sumir');
     }, 300);
+    setTimeout(() => {
+        escolha04.classList.add('anima-blur');
+        escolha04.classList.remove('sumir');
+    }, 1000);
+
+});
+
+pag01Levantar02.addEventListener('click', () => {
+
+    resultadoLevantar.classList.add('anima-blur');
+    resultadoLevantar.classList.remove('sumir');
+
     setTimeout(() => {
         escolha04.classList.add('anima-blur');
         escolha04.classList.remove('sumir');
