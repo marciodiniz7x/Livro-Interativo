@@ -10,6 +10,8 @@ const pag01return01 = document.querySelector('.pag01-return01');
 const pag01Deitar = document.querySelector('.pag01-deitar');
 const pag01Levantar = document.querySelector('.pag01-levantar');
 const pag01Levantar02 = document.querySelector('.pag01-levantar02');
+const pag01Questionar = document.querySelector('.pag01-questionar');
+
 
 const botoes = document.querySelectorAll('button');
 
