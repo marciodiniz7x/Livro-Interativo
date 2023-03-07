@@ -13,14 +13,16 @@ const pag01Levantar02 = document.querySelector('.pag01-levantar02');
 const pag01Questionar = document.querySelector('.pag01-questionar');
 const pag01Agradecer = document.querySelector('.pag01-agradecer');
 
-
-
 const botoes = document.querySelectorAll('button');
 
 
 const resultadoAvance = document.querySelector('.resultado-avance');
 const resultadoDeitar = document.querySelector('.resultado-deitar');
 const resultadoLevantar = document.querySelector('.resultado-levantar');
+
+const resultadoQuestionar = document.querySelector('.resultado-questionar');
+const resultadoAgradecer = document.querySelector('.resultado-agradecer');
+
 
 // Uma variável para se transformar no botão apropriado
 let botaoMomento = capaIniciar;
