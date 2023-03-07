@@ -92,10 +92,12 @@ pag01Levantar02.addEventListener('click', () => {
 
     resultadoLevantar.classList.add('anima-blur');
     resultadoLevantar.classList.remove('sumir');
+    resultadoLevantar.innerHTML += `<br>`
 
     setTimeout(() => {
         escolha04.classList.add('anima-blur');
         escolha04.classList.remove('sumir');
+
     }, 1000);
 
 });
