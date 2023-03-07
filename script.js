@@ -11,6 +11,8 @@ const pag01Deitar = document.querySelector('.pag01-deitar');
 const pag01Levantar = document.querySelector('.pag01-levantar');
 const pag01Levantar02 = document.querySelector('.pag01-levantar02');
 const pag01Questionar = document.querySelector('.pag01-questionar');
+const pag01Agradecer = document.querySelector('.pag01-agradecer');
+
 
 
 const botoes = document.querySelectorAll('button');
