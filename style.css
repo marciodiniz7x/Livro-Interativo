@@ -184,6 +184,37 @@ p {
     color: white;
 }
 
+.pag01-proxima {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(140, 67, 224);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 400ms;
+    color: white;
+}
+.pag01-proxima:hover {
+    animation: anima-blur 400ms linear;
+    background-color: rgb(176, 121, 248);
+    transition: 300ms;
+    color: white;
+}
+.pag01-repetir {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(250, 30, 30);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 400ms;
+    color: white;
+}
+.pag01-repetir:hover {
+    animation: anima-blur 400ms linear;
+    background-color: rgb(253, 113, 143);
+    transition: 300ms;
+    color: white;
+}
+
 /* CLASSES PRÉ-DEFINIDAS */
 .anima-blur {
     animation: anima-blur 400ms linear;

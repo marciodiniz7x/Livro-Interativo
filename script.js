@@ -3,7 +3,8 @@ const pag01 = document.querySelector('.pag01');
 const capaIniciar = document.querySelector('.capa-iniciar');
 const escolha02 = document.querySelector('.escolha02');
 const escolha03 = document.querySelector('.escolha03');
-const escolha04 = document.querySelector('.escolha04')
+const escolha04 = document.querySelector('.escolha04');
+const escolhaFinal = document.querySelector('.escolha-final');
 
 const pag01avance01 = document.querySelector('.pag01-avance01');
 const pag01return01 = document.querySelector('.pag01-return01');
@@ -12,6 +13,8 @@ const pag01Levantar = document.querySelector('.pag01-levantar');
 const pag01Levantar02 = document.querySelector('.pag01-levantar02');
 const pag01Questionar = document.querySelector('.pag01-questionar');
 const pag01Agradecer = document.querySelector('.pag01-agradecer');
+const pag01repetir = document.querySelector('.pag01-repetir');
+const pag01Final = document.querySelector('.page01-proxima');
 
 const botoes = document.querySelectorAll('button');
 
@@ -28,19 +31,15 @@ let botaoMomento = capaIniciar;
 // Um evento na capa do livro que irá iniciar a leitura
 capaIniciar.addEventListener('click', () => {
 
-    capa.classList.add('sumir');
-    pag01.classList.remove('sumir');
-    pag01.classList.add('anima-blur');
+    window.location.href = "pag01.html";
     
 });
 
 // Evento que retorna à capa do livro
 pag01return01.addEventListener('click', () => {
 
-    location.reload();
-    pag01.classList.add('sumir');
-    capa.classList.remove('sumir');
-     
+    window.location.replace("capa.html");
+
 });
 
 // Avança para o segunndo parágrafo
@@ -105,7 +104,7 @@ pag01Levantar02.addEventListener('click', () => {
 
 });
 
-pag01avance01.addEventListener('click', () => {
+pag01Questionar.addEventListener('click', () => {
 
     resultadoQuestionar.classList.add('anima-blur');
     resultadoQuestionar.classList.remove('sumir');
@@ -115,26 +114,49 @@ pag01avance01.addEventListener('click', () => {
         pag01Agradecer.classList.add('sumir');
     }, 300);
     setTimeout(() => {
-        escolha02.classList.add('anima-blur');
-        escolha02.classList.remove('sumir');
+        escolhaFinal.classList.add('anima-blur');
+        escolhaFinal.classList.remove('sumir');
     }, 1000);
    
 });
 
-// função para tocar efeito sonoro nos botoes
-let audio = new Audio('./sound/ori01.mp3');
+pag01Agradecer.addEventListener('click', () => {
 
-function tocarOri() {
-    audio.pause()
-        audio.currentTime = 0;
-        setTimeout(() => {
-            audio.play();
-        }, 100);
-}
-
-botoes.forEach(botao => {
-
-    botao.addEventListener('click', tocarOri);
-    botao.addEventListener('mouseover', tocarOri);
-
+    resultadoAgradecer.classList.add('anima-blur');
+    resultadoAgradecer.classList.remove('sumir');
+    pag01Questionar.classList.add('anima-blur');
+    
+    setTimeout(() => {
+        pag01Questionar.classList.add('sumir');
+    }, 300);
+    setTimeout(() => {
+        escolhaFinal.classList.add('anima-blur');
+        escolhaFinal.classList.remove('sumir');
+    }, 1000);
+   
 });
+
+pag01repetir.addEventListener('click', () => {
+
+    location.reload();
+    capa.classList.add('sumir');
+});
+
+// função para tocar efeito sonoro nos botoes
+
+// let audio = new Audio('./sound/ori01.mp3');
+
+// function tocarOri() {
+//     audio.pause()
+//         audio.currentTime = 0;
+//         setTimeout(() => {
+//             audio.play();
+//         }, 100);
+// }
+
+// botoes.forEach(botao => {
+
+//     botao.addEventListener('click', tocarOri);
+//     botao.addEventListener('mouseover', tocarOri);
+
+// });
