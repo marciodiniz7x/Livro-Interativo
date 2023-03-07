@@ -92,7 +92,7 @@ pag01Levantar02.addEventListener('click', () => {
 
     resultadoLevantar.classList.add('anima-blur');
     resultadoLevantar.classList.remove('sumir');
-    resultadoLevantar.innerHTML += `<br>`
+    resultadoLevantar.innerHTML = `<br> ${resultadoLevantar}`;
 
     setTimeout(() => {
         escolha04.classList.add('anima-blur');
