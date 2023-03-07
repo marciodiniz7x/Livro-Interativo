@@ -101,6 +101,8 @@ pag01Levantar02.addEventListener('click', () => {
 
 });
 
+
+
 // função para tocar efeito sonoro nos botoes
 let audio = new Audio('./sound/ori01.mp3');
 
