@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livro Interativo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    
 </head>
 <body>
     <article class="livro">
@@ -15,5 +15,16 @@
             <input class="capa-iniciar" type="button" value="Iniciar Leitura">
         </div>
     </article>
+
+    <script>
+        const capa = document.querySelector('.capa');
+        const capaIniciar = document.querySelector('.capa-iniciar');
+
+        capaIniciar.addEventListener('click', () => {
+
+        window.location.href = "pag01.html";
+
+        });
+    </script>
 </body>
 </html>

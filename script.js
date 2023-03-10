@@ -1,6 +1,3 @@
-const capa = document.querySelector('.capa');
-const pag01 = document.querySelector('.pag01');
-const capaIniciar = document.querySelector('.capa-iniciar');
 const escolha02 = document.querySelector('.escolha02');
 const escolha03 = document.querySelector('.escolha03');
 const escolha04 = document.querySelector('.escolha04');
@@ -24,21 +21,10 @@ const resultadoLevantar = document.querySelector('.resultado-levantar');
 const resultadoQuestionar = document.querySelector('.resultado-questionar');
 const resultadoAgradecer = document.querySelector('.resultado-agradecer');
 
-
-// Uma variável para se transformar no botão apropriado
-let botaoMomento = capaIniciar;
-
-// Um evento na capa do livro que irá iniciar a leitura
-capaIniciar.addEventListener('click', () => {
-
-    window.location.href = "pag01.html";
-    
-});
-
 // Evento que retorna à capa do livro
 pag01return01.addEventListener('click', () => {
 
-    window.location.replace("capa.html");
+    window.location.replace("index.html");
 
 });
 
@@ -49,7 +35,7 @@ pag01avance01.addEventListener('click', () => {
     resultadoAvance.classList.remove('sumir');
     pag01return01.classList.add('anima-blur');
     
-    
+
     setTimeout(() => {
         pag01return01.classList.add('sumir');
     }, 300);
@@ -139,7 +125,6 @@ pag01Agradecer.addEventListener('click', () => {
 pag01repetir.addEventListener('click', () => {
 
     location.reload();
-    capa.classList.add('sumir');
 });
 
 // função para tocar efeito sonoro nos botoes
